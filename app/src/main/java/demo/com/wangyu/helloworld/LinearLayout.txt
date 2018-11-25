@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+-->
+    <!--
+    1. hello world
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World 1232"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    -->
+
+    <!-- layout_width="200dp"
+    padding 内边距
+    margin 外边距
+    android:orientation="horizontal" 水平反方向
+    gravity="bottom" 排列方式
+    layout_weight 权重
+    -->
+
+    <!-- 线性布局
+    <LinearLayout
+        android:id="@+id/ll_1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:padding="20dp"
+        android:paddingLeft="30dp"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF0033"
+            ></View>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:background="#0066FF"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        >
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:layout_weight="2"
+            ></View>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FFffff"
+            android:layout_weight="2"
+            ></View>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#FF00ff"
+            android:layout_weight="1"
+            ></View>
+    </LinearLayout>
+    -->
+        <!--
+        layout_weight 权重 将剩余内容按照权重分配
+        -->
+<!--</LinearLayout>-->
