@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         >
-
         <RadioButton
             android:id="@+id/rb_1"
             android:layout_width="wrap_content"
@@ -22,6 +21,7 @@
             android:text="男"
             android:textSize="18sp"
             android:textColor="#ff6600"
+            android:checked="true"
             />
         <RadioButton
             android:id="@+id/rb_2"
@@ -32,20 +32,39 @@
             android:textColor="#ff6600"
             />
     </RadioGroup>
-    <RadioButton
-        android:id="@+id/rb_3"
+
+    <RadioGroup
+        android:id="@+id/rg_2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="男"
-        android:textSize="18sp"
-        android:textColor="#ff6600"
-        />
-    <RadioButton
-        android:id="@+id/rb_4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="女"
-        android:textSize="18sp"
-        android:textColor="#ff6600"
-        />
+        android:orientation="horizontal"
+        android:layout_below="@id/rg_1"
+        android:layout_marginTop="50dp"
+        >
+        <RadioButton
+            android:id="@+id/rb_3"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="男"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:checked="true"
+            android:button="@null"
+            android:background="@drawable/selector_orange"
+            />
+        <RadioButton
+            android:id="@+id/rb_4"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="女"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:button="@null"
+            android:background="@drawable/selector_orange"
+            android:layout_marginLeft="10dp"
+            />
+    </RadioGroup>
+
 </RelativeLayout>

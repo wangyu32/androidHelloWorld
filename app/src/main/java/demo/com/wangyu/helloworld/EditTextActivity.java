@@ -26,7 +26,7 @@ public class EditTextActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //跳转到button
-                Toast.makeText(EditTextActivity.this, "登录成功了", Toast.LENGTH_SHORT).show();
+            Toast.makeText(EditTextActivity.this, "登录成功了", Toast.LENGTH_SHORT).show();
             }
         });
 
