@@ -20,9 +20,8 @@
         <activity android:name=".ButtonActivity" />
         <activity android:name=".EditTextActivity" />
         <activity android:name=".RadioButtonActivity" />
-        <!--
-
-        -->
+        <!--   -->
+        <activity android:name=".CheckBoxActivity"></activity>
     </application>
 
 </manifest>
