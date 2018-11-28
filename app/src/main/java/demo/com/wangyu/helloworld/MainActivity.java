@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnRadioButton;
     private Button mBtnCheckBox;
     private Button mBtnImageView;
+    private Button mBtnQRcode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadioButton = (Button)findViewById(R.id.btn_radiobutton);
         mBtnCheckBox = (Button)findViewById(R.id.btn_checkBox);
         mBtnImageView = (Button)findViewById(R.id.btn_imageview);
+        mBtnQRcode = (Button)findViewById(R.id.btn_qrcode);
         setListeners();
     }
 
@@ -36,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRadioButton.setOnClickListener(onClick);
         mBtnCheckBox.setOnClickListener(onClick);
         mBtnImageView.setOnClickListener(onClick);
+        mBtnQRcode.setOnClickListener(onClick);
     }
 
     public class OnClick implements View.OnClickListener{
@@ -61,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_imageview:
                     intent = new Intent(MainActivity.this, ImageViewActivity.class);
+                    break;
+                case R.id.btn_qrcode:
+                    intent = new Intent(MainActivity.this, QRcodeActivity.class);
                     break;
             }
             startActivity(intent);
