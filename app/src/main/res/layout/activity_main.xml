@@ -48,10 +48,17 @@
         android:textAllCaps="false"/>
 
     <Button
-        android:id="@+id/btn_qrcode"
+        android:id="@+id/btn_qrcode0"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="二维码"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_scanqrcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="扫描二维码"
         android:textAllCaps="false"/>
 
 </LinearLayout>

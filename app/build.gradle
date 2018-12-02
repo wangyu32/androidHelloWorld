@@ -39,5 +39,5 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0'
 
     // 二维码
-    compile 'com.google.zxing:core:3.3.0'
+    implementation  'com.google.zxing:core:3.3.0'
 }
