@@ -8,11 +8,14 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import demo.com.wangyu.helloworld.util.Util;
+
 public class TestViewActivity extends AppCompatActivity {
 
     private TextView textView4;
     private TextView textView5;
     private TextView textView6;
+    private TextView textView8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +32,10 @@ public class TestViewActivity extends AppCompatActivity {
         this.textView6 = (TextView) findViewById(R.id.tv_6);
 //        textView6.setText("宇哥测试呢");
         textView6.setText(Html.fromHtml("<u>宇哥测试呢</u>"));
+
+        this.textView8 = findViewById(R.id.tv8);
+        textView8.setText(Util.getSerialNumber(getBaseContext()));
+
 
     }
 }
