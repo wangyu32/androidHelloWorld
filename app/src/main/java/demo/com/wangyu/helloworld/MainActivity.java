@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import demo.com.wangyu.helloworld.gridview.GridViewActivity;
+import demo.com.wangyu.helloworld.listview.ListViewActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button mBtnTextView;
@@ -16,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnImageView;
     private Button mBtnQRcode;
     private Button mBtnScanQRcode;
+    private Button mBtnListView;
+    private Button mBtnGirdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
         mBtnImageView = (Button)findViewById(R.id.btn_imageview);
         mBtnQRcode = (Button)findViewById(R.id.btn_qrcode0);
         mBtnScanQRcode = (Button)findViewById(R.id.btn_scanqrcode);
+        mBtnListView = (Button)findViewById(R.id.btn_listview);
+        mBtnGirdView = (Button)findViewById(R.id.btn_gridview);
         setListeners();
     }
 
@@ -42,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
         mBtnImageView.setOnClickListener(onClick);
         mBtnQRcode.setOnClickListener(onClick);
         mBtnScanQRcode.setOnClickListener(onClick);
+        mBtnListView.setOnClickListener(onClick);
+        mBtnGirdView.setOnClickListener(onClick);
     }
 
     public class OnClick implements View.OnClickListener{
@@ -73,6 +82,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_scanqrcode:
                     intent = new Intent(MainActivity.this, ScanQRcodeActivity.class);
+                    break;
+                case R.id.btn_listview:
+                    intent = new Intent(MainActivity.this, ListViewActivity.class);
+                    break;
+                case R.id.btn_gridview:
+                    intent = new Intent(MainActivity.this, GridViewActivity.class);
                     break;
             }
             startActivity(intent);

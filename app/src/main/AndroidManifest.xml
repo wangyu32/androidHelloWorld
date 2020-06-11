@@ -33,6 +33,10 @@
         <activity android:name=".QRcodeActivity" />
         <activity android:name=".ScanQRcodeActivity" />
         <activity android:name="com.google.zxing.activity.CaptureActivity"/>
+
+        <activity android:name=".listview.ListViewActivity" />
+        <activity android:name=".gridview.GridViewActivity" />
+
     </application>
 
 </manifest>
